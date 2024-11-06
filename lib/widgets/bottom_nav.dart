@@ -49,22 +49,22 @@ class _BottomNavState extends State<BottomNav> {
             Icon(
               Icons.home_outlined,
               color: Colors.white,
-              size: 20.0,
+              size: 30.0,
             ),
             Icon(
               Icons.shop_outlined,
               color: Colors.white,
-              size: 20.0,
+              size: 30.0,
             ),
             Icon(
               Icons.chat_outlined,
               color: Colors.white,
-              size: 20.0,
+              size: 30.0,
             ),
             Icon(
               Icons.person_outline,
               color: Colors.white,
-              size: 20.0,
+              size: 30.0,
             ),
           ]),
       body: pages[currentTabIndex],
