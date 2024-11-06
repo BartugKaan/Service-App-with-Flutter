@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:service_app/widgets/service_row_widget.dart';
 import 'package:service_app/widgets/service_widget.dart';
 
 class Home extends StatefulWidget {
@@ -113,75 +114,12 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(height: 20.0),
-            Container(
-              padding: EdgeInsets.only(left: 10.0, top: 10.0, bottom: 10.0),
-              margin: EdgeInsets.only(left: 20.0, right: 20.0),
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 197, 227, 244),
-                  borderRadius: BorderRadius.circular(15)),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset(
-                      "images/cleaning.png",
-                      width: 90,
-                      height: 120,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  SizedBox(width: 10.0),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            color: Colors.orange,
-                          ),
-                          SizedBox(width: 5),
-                          Text(
-                            "4.5",
-                            style: TextStyle(
-                                color: Color(0xff284a79),
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
-                      Text(
-                        "Home Cleaning",
-                        style: TextStyle(
-                            color: Color(0xff284a79),
-                            fontSize: 22.0,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        "by Home Services",
-                        style:
-                            TextStyle(color: Color(0xff284a79), fontSize: 14.0),
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.all(4.0),
-                            decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 130, 127, 127)),
-                            child: Text(
-                              "\$24/Hour",
-                              style: TextStyle(
-                                  color: Colors.white, fontSize: 14.0),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  )
-                ],
-              ),
+            ServiceRow(
+              serviceImage: "images/cleaning.png",
+              serviceScore: "4.5",
+              serviceProvider: "by Home Services",
+              servicePrice: "\$24/Hour",
+              serviceName: "Home Cleaning",
             )
           ],
         ),
