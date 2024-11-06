@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:service_app/pages/book_page.dart';
 import 'package:service_app/pages/home.dart';
 import 'package:service_app/widgets/bottom_nav.dart';
 
@@ -11,13 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: BottomNav());
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: BottomNav(),
+    );
   }
 }
 

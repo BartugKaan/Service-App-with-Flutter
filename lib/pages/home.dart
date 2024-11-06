@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:service_app/pages/book_page.dart';
 import 'package:service_app/widgets/service_row_widget.dart';
 import 'package:service_app/widgets/service_widget.dart';
 
@@ -114,12 +115,18 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(height: 20.0),
-            ServiceRow(
-              serviceImage: "images/cleaning.png",
-              serviceScore: "4.5",
-              serviceProvider: "by Home Services",
-              servicePrice: "\$24/Hour",
-              serviceName: "Home Cleaning",
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BookPage()));
+              },
+              child: ServiceRow(
+                serviceImage: "images/cleaning.png",
+                serviceScore: "4.5",
+                serviceProvider: "by Home Services",
+                servicePrice: "\$24/Hour",
+                serviceName: "Home Cleaning",
+              ),
             ),
             SizedBox(height: 10),
             ServiceRow(
