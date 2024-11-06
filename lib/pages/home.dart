@@ -129,12 +129,6 @@ class _HomeState extends State<Home> {
                 servicePrice: "\$15/Hour",
                 serviceName: "Laundry"),
             SizedBox(height: 10),
-            ServiceRow(
-                serviceImage: "images/painting.png",
-                serviceScore: "3.2",
-                serviceProvider: "by Paint the House",
-                servicePrice: "\$40/Hour",
-                serviceName: "Painting")
           ],
         ),
       ),
