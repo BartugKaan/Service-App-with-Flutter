@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:service_app/widgets/old_service.dart';
 import 'package:service_app/widgets/service_row_widget.dart';
 
 class Order extends StatefulWidget {
@@ -61,7 +62,7 @@ class _OrderState extends State<Order> {
               ),
             ),
             SizedBox(height: 10),
-            ServiceRow(
+            OldServiceRow(
                 serviceImage: "images/laundry.png",
                 serviceScore: "4",
                 serviceProvider: "by Laundry co.",
