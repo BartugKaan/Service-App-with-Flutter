@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:service_app/pages/book_page.dart';
-import 'package:service_app/pages/home.dart';
 import 'package:service_app/widgets/bottom_nav.dart';
 
 void main() {
