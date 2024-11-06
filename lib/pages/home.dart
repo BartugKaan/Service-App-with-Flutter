@@ -120,7 +120,21 @@ class _HomeState extends State<Home> {
               serviceProvider: "by Home Services",
               servicePrice: "\$24/Hour",
               serviceName: "Home Cleaning",
-            )
+            ),
+            SizedBox(height: 10),
+            ServiceRow(
+                serviceImage: "images/laundry.png",
+                serviceScore: "4",
+                serviceProvider: "by Laundry co.",
+                servicePrice: "\$15/Hour",
+                serviceName: "Laundry"),
+            SizedBox(height: 10),
+            ServiceRow(
+                serviceImage: "images/painting.png",
+                serviceScore: "3.2",
+                serviceProvider: "by Paint the House",
+                servicePrice: "\$40/Hour",
+                serviceName: "Painting")
           ],
         ),
       ),
