@@ -32,7 +32,7 @@ class _ChatPageState extends State<ChatPage> {
                     Text(
                       "Chat",
                       style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 36,
                           fontWeight: FontWeight.bold,
                           color: Color(0xff284a79)),
                     )
