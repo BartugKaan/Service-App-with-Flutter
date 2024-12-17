@@ -1,6 +1,6 @@
 # Service App
 
-Service App is a Flutter application designed for listing and hiring services for users. Yhis application created for developing my dart and Flutter UI skills.
+Service App is a Flutter application designed for listing and hiring services for users. This application created for developing my dart and Flutter UI skills.
 
 ## Features
 
